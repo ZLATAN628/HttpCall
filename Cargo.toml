@@ -1,0 +1,19 @@
+[package]
+name = "httpcall"
+version = "0.1.0"
+edition = "2021"
+authors = ["ycx"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1.0.82"
+reqwest = { version = "0.12.7", features = ["json"] }
+serde = "1.0.198"
+serde_json = "1.0.116"
+tokio = { version = "1.37.0", features = ["full"] }
+url = "2.5.0"
+libc = "0.2.153"
